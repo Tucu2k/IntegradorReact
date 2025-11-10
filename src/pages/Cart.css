@@ -1,0 +1,106 @@
+/* CONTENEDOR PRINCIPAL */
+.cart-page {
+  color: #ffffff;
+  padding: 2rem 0;
+}
+
+/* TÍTULO */
+.cart-page h1 {
+  font-size: 2.4rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  text-shadow: 0 0 12px rgba(255,255,255,0.25);
+}
+
+/* TABLA */
+.cart-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+/* HEADER DE TABLA */
+.cart-table thead th {
+  padding: 1rem;
+  background: rgba(255, 255, 255, 0.08);
+  color: #fff;
+  text-transform: uppercase;
+  font-size: .9rem;
+  letter-spacing: 0.5px;
+}
+
+/* FILAS */
+.cart-table tbody td {
+  padding: 1rem;
+  color: #2e2d2d;
+  vertical-align: middle;
+  border-bottom: 1px solid rgba(255,255,255,0.08);
+}
+
+/* INPUT DE CANTIDAD */
+.cart-qty-input {
+  width: 80px;
+  text-align: center;
+  background: #111;
+  border: 1px solid rgba(255,255,255,0.2);
+  color: #fff;
+  border-radius: 6px;
+}
+
+/* BOTÓN ELIMINAR */
+.btn-remove {
+  background: #d9534f !important;
+  border: none !important;
+  color: #fff !important;
+  padding: 0.4rem 1rem;
+  border-radius: 6px;
+  font-weight: 600;
+}
+
+.btn-remove:hover {
+  background: #c9302c !important;
+}
+
+/* BOTONES INFERIORES */
+.cart-buttons {
+  margin-top: 1.5rem;
+  display: flex;
+  justify-content: flex-end;
+  gap: 1rem;
+}
+
+.btn-clear {
+  background: #2b2f4b !important;
+  color: #fff !important;
+  border: none !important;
+  padding: 0.6rem 1.2rem;
+  border-radius: 6px;
+}
+
+.btn-clear:hover {
+  background: #3d4366 !important;
+}
+
+.btn-buy {
+  background: #d9534f !important;
+  color: #fff !important;
+  border: none !important;
+  padding: 0.6rem 1.2rem;
+  border-radius: 6px;
+  font-weight: 600;
+}
+
+.btn-buy:hover {
+  background: #c9302c !important;
+}
+
+/* TOTAL */
+.cart-total {
+  margin-top: 1rem;
+  font-size: 1.4rem;
+  font-weight: bold;
+  color: #fff;
+}

@@ -7,7 +7,7 @@ import About from './pages/About'
 import Products from './pages/Products'
 import Contact from './pages/Contact'
 import CartPage from './pages/CartPage'
-import StarBackground from './components/StarBackground' // 🌌 Fondo animado
+import StarBackground from "./components/StarBackground"; // 🌌 Fondo animado
 import './App.css' // 🎨 estilos globales
 
 export default function App() {

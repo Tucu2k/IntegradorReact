@@ -8,10 +8,14 @@ body, html {
   overflow-x: hidden;
   height: 100%;
   overflow-y: scroll;
+  background: #000 !important;
 }
 body::-webkit-scrollbar {
   width: 0;
   height: 0;
+}
+main, .container {
+  background: transparent !important;
 }
 
 .app-container {
@@ -74,6 +78,19 @@ button, .btn {
   backdrop-filter: blur(6px);
 }
 
-.footer {
-    background-color: black;
+#tsparticles {
+  position: fixed !important;
+  inset: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: -1 !important;
+}
+
+html, body {
+  background: #000 !important;
+}
+.container,
+.content-wrapper,
+main {
+  background: transparent !important;
 }
