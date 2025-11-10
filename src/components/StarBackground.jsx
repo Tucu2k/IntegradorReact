@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
-import Particles, { initParticlesEngine } from "@tsparticles/react";
+import { Particles } from "@tsparticles/react";
 import { loadStarsPreset } from "@tsparticles/preset-stars";
+
 
 export default function StarBackground() {
   const [init, setInit] = useState(false);
