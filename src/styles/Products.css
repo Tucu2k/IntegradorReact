@@ -1,0 +1,35 @@
+.product-card {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  color: #fff;
+  border-radius: 12px;
+  transition: all 0.3s ease;
+  backdrop-filter: blur(6px);
+}
+
+.product-card:hover {
+  background: rgba(255, 255, 255, 0.15);
+  transform: translateY(-4px);
+  box-shadow: 0 4px 12px rgba(255, 255, 255, 0.1);
+}
+
+.product-card img {
+  object-fit: contain;
+  height: 180px;
+  padding: 10px;
+  background: rgba(0, 0, 0, 0.3);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.product-card .btn {
+  color: #fff;
+  border: 1px solid #00bfff;
+  background: rgba(0, 191, 255, 0.1);
+  transition: all 0.3s ease;
+}
+
+.product-card .btn:hover {
+  background: #00bfff;
+  color: #000;
+}
+

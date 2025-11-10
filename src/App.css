@@ -1,0 +1,79 @@
+/* === Fondo estrellado retro === */
+body, html {
+  margin-top: 1rem;
+  padding: 0;
+  background-color: #030712; /* color de respaldo si el canvas no carga */
+  color: white; /* texto en blanco para contraste */
+  min-height: 100vh;
+  overflow-x: hidden;
+  height: 100%;
+  overflow-y: scroll;
+}
+body::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+}
+
+.app-container {
+  position: relative;
+  z-index: 1; /* para que el contenido quede encima del fondo */
+}
+
+.card {
+  background: rgba(255, 255, 255, 0.08) !important;
+  color: white !important;
+  border: none !important; /* 🔹 Sin bordes */
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.05); /* sombra sutil */
+  transition: transform 0.2s ease, box-shadow 0.3s ease;
+}
+.card-body,
+.card-title,
+.card-text {
+  background: transparent !important;
+  color: white !important;
+}
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 4px 12px rgba(255, 255, 255, 0.1);
+}
+
+.btn {
+  border-radius: 6px;
+}
+/* === Hero oscuro y transparente === */
+.hero-section {
+  background: transparent !important;  /* elimina fondo blanco */
+  color: #fff;
+}
+
+.hero-section .btn {
+  font-weight: 600;
+}
+
+/* Corrige el fondo por si Bootstrap agrega un color claro */
+.bg-light, .bg-white {
+  background-color: transparent !important;
+}
+.content-wrapper {
+  position: relative;
+  z-index: 1; /* asegura que esté sobre el fondo */
+}
+h1, h2, h3, h4, h5, p, label {
+  color: white !important;
+}
+
+button, .btn {
+  border-radius: 8px;
+}
+
+/* Navbar transparente para que se vean las estrellas detrás */
+.navbar {
+  background-color: rgba(10, 10, 20, 0.8) !important;
+  backdrop-filter: blur(6px);
+}
+
+.footer {
+    background-color: black;
+}

@@ -1,0 +1,33 @@
+/* === Fondo transparente para integrarse al cielo estrellado === */
+.hero-section {
+  background: transparent !important;
+  color: #fff;
+  position: relative;
+  z-index: 2; /* para que quede sobre el fondo animado */
+}
+
+/* Ajustes visuales */
+.hero-section h1 {
+  text-shadow: 0 0 8px rgba(255, 255, 255, 0.6);
+}
+
+.hero-section .lead {
+  font-size: 1.25rem;
+  opacity: 0.9;
+}
+
+.hero-section .btn {
+  font-weight: 600;
+  border-radius: 1rem;
+}
+
+/* Imagen del Hero */
+.hero-img {
+  max-width: 600px;
+  filter: drop-shadow(0 0 10px rgba(255, 255, 255, 0.3));
+}
+
+/* Corrige clases de Bootstrap que agregan fondos blancos */
+.bg-light, .bg-white {
+  background-color: transparent !important;
+}

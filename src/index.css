@@ -1,0 +1,22 @@
+body {
+  background-color: #f9f9f9;
+  font-family: 'Poppins', sans-serif;
+  color: #333;
+  padding-top: 70px;
+}
+
+/* Cambiar el color del navbar */
+.navbar {
+  background-color: #1a1a2e !important;
+}
+
+/* Cambiar color principal */
+.btn-primary {
+  background-color: #ff4b5c;
+  border-color: #ff4b5c;
+}
+
+.btn-primary:hover {
+  background-color: #ff6b81;
+  border-color: #ff6b81;
+}

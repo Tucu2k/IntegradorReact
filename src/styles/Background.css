@@ -1,0 +1,55 @@
+/* === Fondo animado tipo noche estrellada 8 bits === */
+body {
+  background: radial-gradient(ellipse at bottom, #0d1b2a 0%, #000000 100%);
+  overflow-x: hidden;
+  min-height: 100vh;
+  color: #fff;
+}
+
+/* Estrellas animadas */
+.stars {
+  width: 100%;
+  height: 100%;
+  background: transparent url("https://www.transparenttextures.com/patterns/pixel-stars.png") repeat;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  animation: moveStars 120s linear infinite;
+  opacity: 0.7;
+}
+
+@keyframes moveStars {
+  from { background-position: 0 0; }
+  to { background-position: 10000px 10000px; }
+}
+
+/* === Limpieza de fondos === */
+.container,
+.card,
+main,
+section,
+.hero,
+div[class*="bg-light"],
+div[class*="bg-white"] {
+  background: transparent !important;
+  box-shadow: none !important;
+}
+
+/* === Ajustes generales === */
+.navbar, header, footer {
+  background: rgba(0, 0, 0, 0.9) !important;
+  backdrop-filter: blur(8px);
+}
+
+button, .btn {
+  border-radius: 8px;
+}
+/* 🔧 Fuerza transparencia del Hero y secciones claras */
+.hero,
+.hero-section,
+.bg-light,
+.bg-white {
+  background: transparent !important;
+  background-color: transparent !important;
+}
